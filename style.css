@@ -10,6 +10,7 @@ body {
     background: black;
     height: 300vh;
     font-family: Arial, sans-serif;
+    line-height: 50px;
 }
 
 /* Navigation */
