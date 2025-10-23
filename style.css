@@ -15,13 +15,16 @@ body {
 
 /* Navigation */
 nav {
-    background: rgba(0, 0, 0, 0.9);
-    padding: 1rem;
+    /* semi-transparent background + backdrop blur for frosted glass effect */
+    background: rgba(0, 0, 0, 0.45);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    padding: 1rem 1.5rem;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid rgb(135, 135, 255);
+    border-bottom: 1px solid rgba(135, 135, 255, 0.15);
 }
 
 .nav-menu {
@@ -102,6 +105,7 @@ main {
     border-color: rgb(135, 135, 255);
     transform: translateY(-2px);
     box-shadow: 0 0 15px rgba(135, 135, 255, 0.5);
+        font-weight: bold;
 }
 
 img {
