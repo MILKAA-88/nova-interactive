@@ -35,14 +35,6 @@ nav {
     margin: 0 auto;
 }
 
-.logo {
-    color: rgb(135, 135, 255);
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    text-shadow: 0 0 10px rgba(135, 135, 255, 0.5);
-}
-
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -82,24 +74,6 @@ nav {
     margin: 5px 0;
     transition: 0.3s ease;
 }
-
-/* Contenu principal */
-main {
-    padding-top: 100px;
-}
-img {
-    border-radius: 5px;
-    margin: 0 auto;
-    height: 40vh;
-    cursor: progress;
-    transition: transform 0.3s ease;
-}
-
-img:hover {
-    transform: scale(1.02);
-}
-
-/* Version mobile */
 @media screen and (max-width: 768px) {
     .nav-links {
         display: none;
@@ -125,4 +99,26 @@ img:hover {
     .nav-links a:hover::after {
         width: 50%;
     }
+}
+.logo {
+    color: rgb(135, 135, 255);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0 0 10px rgba(135, 135, 255, 0.5);
+}
+.back {
+    border: none;
+    border-radius: 2px;
+    color: white;
+    padding: 10px 20px;
+    background: red;
+    cursor: pointer;
+}
+.gip {
+    font-weight: bold;
+    font-size: 20px;
+    background: rgb(231, 169, 55);
+    padding: 20px 20px;
+    border-radius: 5px;
 }
